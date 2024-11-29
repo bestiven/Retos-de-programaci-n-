@@ -1,14 +1,13 @@
 #Ejercicio 1
 #Escribir un programa que pregunte el nombre del usuario en la consola y un número entero e imprima por pantalla
 #en líneas distintas el nombre del usuario tantas veces como el número introducido.
-# nombre =input("ingrese su nombre :  ")
-# numero = int(input("ingrese un numero : "))
-# puede ser de esta forma o de la otra forma 
-# conta = 1 
-# while conta <= numero:
-#     print(nombre)
-#     conta+=1
-#-------------------------------------------
+
+# nombre = input("nombre : ")
+# numero = int(input("numero : "))
+# print(numero*(nombre + '\n'))
+
+
+# #-------------------------------------------
 # for i in range(0,numero): 
 #     print(nombre)
 
@@ -19,6 +18,16 @@
 # nombre =input("ingrese su nombre :  ")
 # numero = int(input("ingrese un numero : "))
 # print((nombre + "\n")*numero)
+
+
+
+# nombre =input("ingrese su nombre :  ")
+# numero = int(input("ingrese un numero : "))
+
+# #imprima por pantalla en líneas distintas el nombre del usuario tantas veces como el número introducido.
+
+# print(nombre*numero)
+
 
 
 #Ejercicio 2
@@ -89,53 +98,74 @@
 #Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por pantalla,
 #el día, el mes y el año. Adaptar el programa anterior para que también funcione cuando el día o el mes 
 #se introduzcan con un solo carácter.
+# fecha_nacimiento = input("ingrese la fecha de nacimiento formato dd/mm/aaaa :")
+# new_fecha= fecha_nacimiento.split("/")
+# dia = new_fecha [0]
+# mes = new_fecha [1]
+# año = new_fecha [2]
+# new_dia = dia.zfill(2)
+# new_mes = mes.zfill(2)
+# print(f' Su fecha de nacimiento es : {new_dia}/{new_mes}/{año}')
+
+
+#Ejercicio 10 
+#Escribir un programa que pregunte por consola por los productos de una cesta de la compra, 
+#separados por comas, y muestre por pantalla cada uno de los productos en una línea distinta.
+
+# productos = input("ingrese productos comprados separados por comas : ")
+
+# result_productos = productos.split(",")
+# #mostrar en una linea distinta 
 
 
 
-
-#Ejercicio 10
-#Escribir un programa que pregunte el nombre de un producto, su precio y un número de unidades y muestre por pantalla
-# una cadena con el nombre del producto seguido de su precio unitario con 6 dígitos enteros y 2 decimales, 
+#Ejercicio 11
+#Escribir un programa que pregunte el nombre de un producto, su precio y un número de unidades y
+# muestre por pantalla una cadena con el nombre del producto 
+# seguido de su precio unitario con 6 dígitos enteros y 2 decimales, 
 # el número de unidades con tres dígitos y el coste total con 8 dígitos enteros y 2 decimales.
 
 
-# producto = input("Ingrese el nombre de el producto : ")
+# producto = input("Ingrese el nombre del producto : ")
 # precio = float(input("Precio : "))
-# nUnidades = input("Numero de unidades del producto : ")
+# nUnidades = input("Numero de unidades : ")
+
+
+# new_precio = precio
 
 # print (f'nombre : {producto} \n precio unitario : $ {round(precio,2)} \n ')
 #pendiente.......................................
 
 
+
+
 #has un programa que ingrese un numero y ese numero me valide si esta en un rango 
 #especifico me capture el valor en ese rango  
 
-altura = int(input('ingrese la altura en mm'))
-tanque  = int(input('ingrese el tanque'))
 
-if (tanque == 1):
-    if (altura > 0 and altura <= 2165):
-        print('busque en la tabla el valor y compare 1')
-    else:
-        print('el valor especificado no se encuentra en el rango de valores dentro de la tabla ')
-        print("ingrese otro valor")
-elif(tanque == 2):
-    if (altura > 0 and altura <= 1505):
-        print('busque en la tabla el valor y compare 2')
-    else:
-        print('el valor especificado no se encuentra en el rango de valores dentro de la tabla ')
-        print("ingrese otro valor")
-elif(tanque == 3):
-    if (altura > 0 and altura <= 2130):
-        print('busque en la tabla el valor y compare 3')
-    else:
-        print('el valor especificado no se encuentra en el rango de valores dentro de la tabla ')
-        print("ingrese otro valor")
-else:
-    print('el valor ingresado no es valido ')
+# altura = int(input('ingrese la altura en mm'))
+# tanque  = int(input('ingrese el tanque'))
 
-
-
+# if (tanque == 1):
+#     if (altura > 0 and altura <= 2165):
+#         print('busque en la tabla el valor y compare 1')
+#     else:
+#         print('el valor especificado no se encuentra en el rango de valores dentro de la tabla ')
+#         print("ingrese otro valor")
+# elif(tanque == 2):
+#     if (altura > 0 and altura <= 1505):
+#         print('busque en la tabla el valor y compare 2')
+#     else:
+#         print('el valor especificado no se encuentra en el rango de valores dentro de la tabla ')
+#         print("ingrese otro valor")
+# elif(tanque == 3):
+#     if (altura > 0 and altura <= 2130):
+#         print('busque en la tabla el valor y compare 3')
+#     else:
+#         print('el valor especificado no se encuentra en el rango de valores dentro de la tabla ')
+#         print("ingrese otro valor")
+# else:
+#     print('el valor ingresado no es valido ')
 
 
 # def programa(altura):
@@ -163,6 +193,7 @@ else:
 
 #         case _:
 #             print("Ese tanque no existe")
+
 
 
 
