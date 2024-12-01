@@ -20,16 +20,6 @@
 # print((nombre + "\n")*numero)
 
 
-
-# nombre =input("ingrese su nombre :  ")
-# numero = int(input("ingrese un numero : "))
-
-# #imprima por pantalla en líneas distintas el nombre del usuario tantas veces como el número introducido.
-
-# print(nombre*numero)
-
-
-
 #Ejercicio 2
 # Escribir un programa que pregunte el nombre completo del usuario en la consola y después muestre por pantalla 
 # el nombre completo del usuario tres veces, una con todas las letras minúsculas, 
@@ -116,6 +106,7 @@
 
 # result_productos = productos.split(",")
 # #mostrar en una linea distinta 
+
 
 
 
